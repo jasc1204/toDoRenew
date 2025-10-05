@@ -33,12 +33,12 @@ body{
 #project{
     display: flex;
     flex-direction: column;
-    height: 500px;
-    width: 500px;
+  width: 100%;
+    flex:1;
     background-color: rgb(108, 36, 36);    
 }
 
-.projectElement{
+.priority{
     background-color: rgb(171, 218, 137);
     font-size: 30px;
     flex-basis:1;
@@ -49,6 +49,24 @@ body{
     padding: 30px;
 }
 
+.highPriority{
+    background-color: rgb(211, 4, 4);
+
+}
+
+.mediumPriority{
+    background-color: rgb(237, 95, 28);
+
+}
+.lowPriority{
+    background-color: rgb(171, 218, 137);
+
+}
+
+select{
+      font-size: 16px;
+
+}
 
 #formaID {
     display: flex;
@@ -58,6 +76,9 @@ body{
     align-items: center;
     font-size: 50px;
     width: 500px;
+    background-color: aquamarine;
+    border: black solid 5px;
+    border-radius:10px;
 
 }
 #description{
@@ -86,3 +107,10 @@ button{
     align-self:stretch;    /*we need to use this because its parent uses column so aling controls the width it takes */
 }
 
+.titleButton{
+    flex-wrap: 1;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
